@@ -1,0 +1,112 @@
+.message{
+    display: flex;
+    justify-content: center;
+     .container{
+        width: 60%;
+        
+        .breadcrumbs{
+            font-weight: 300;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .messages{
+            margin: 30px 0px;
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            gap: 5px;
+            height: 500px;
+            overflow-y: scroll;
+
+
+
+            &::-webkit-scrollbar {
+                    background: #fff;
+                    width: 5px;
+                    height: 5px;                               
+                }
+          
+       &::-webkit-scrollbar-thumb {
+            background: rgb(157, 156, 156);
+            border-radius: 100px;
+            
+        }
+
+        &::-webkit-scrollbar-track{
+            margin-top: 160px;
+            margin-bottom: 160px;
+        }
+
+          
+
+            .item{
+                display: flex;
+                align-items:  baseline;
+                gap: 20px;
+                max-width: 600px;
+                font-size: 18px;
+
+                &.owner{
+                    flex-direction: row-reverse;
+                    align-self: flex-end;
+
+                    p {
+                                                background-color: royalblue;
+                        border-radius: 20px 0px 20px 20px;
+                        color:white;
+                        }
+                }
+
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                p{
+                    padding: 20px;
+                    background-color: rgb(232, 230, 230);
+                    border-radius: 0px 20px 20px 20px;
+                    color: gray;
+                }
+                
+
+                
+            }
+        }
+
+        hr{
+            height: 0;
+            border: 0.5px solid rgb(231, 230, 230);
+            margin: 20px;
+            
+        }
+        .write{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            textarea{
+                width: 80%;
+                height: 100px;
+                padding: 10px;
+                border: 1px solid lightgray;
+                border-radius: 10px;
+            }
+
+            button{
+                padding: 10px;
+                background-color: #1dbf73;
+                border: none    ;
+                color: white;
+                font-weight: 500;
+                border-radius: 10px;
+                padding: 20px;
+                width: 100px;
+                cursor: pointer;
+            }
+        }
+     }
+}
